@@ -1,6 +1,6 @@
 <#
 ==========================================================================
-Description : Création simplifiée d'unités d'organisation (OU) dans Active Directory
+Description : Création d'unités d'organisation (OU) dans Active Directory
 
 Auteur : FRTDev
 Date : 26/02/2025
