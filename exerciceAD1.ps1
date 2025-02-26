@@ -24,7 +24,7 @@ function Create-NewOU {
     }
 
     try {
-        New-ADOrganizationalUnit -Name $ouName -Path $ouPath -ProtectedFromAccidentalDeletion $true
+        New-ADOrganizationalUnit -Name $ouName -Path $ouPath -ProtectedFromAccidentalDeletion $false
         $newOU = Get-ADOrganizationalUnit -Filter "Name -eq '$ouName'" -SearchBase $ouPath -SearchScope OneLevel
         
         if ($newOU) {
